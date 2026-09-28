@@ -1,0 +1,648 @@
+{
+  "dns": {
+    "fallbackStrategy": "disabledIfAnyMatch",
+    "servers": [
+      {
+        "address": "8.8.8.8",
+        "queryStrategy": "UseIP"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 10805,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "tag": "socks"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 1080,
+      "protocol": "http",
+      "settings": {
+        "allowTransparent": true
+      },
+      "tag": "http"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 10804,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "0.0.0.0",
+        "network": "tcp,udp",
+        "port": 10804
+      },
+      "tag": "dns-in"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "tag": "🇩🇪 Германия (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.96.208",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇬🇧 Великобритания (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.96.94",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇳🇱 Нидерланды (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.114.96.30",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇫🇷 Франция (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.245.180",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇸🇪 Швеция (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.244.215",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇫🇮 Финляндия (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.247.155",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇮🇪 Ирландия (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "173.245.49.251",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇨🇿 Чехия (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.245.196",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇷🇺 Русский (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.245.56",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇺🇸 США (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "173.245.49.147",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇵🇱 Польша (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.247.129",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    },
+    {
+      "protocol": "vless",
+      "tag": "🇹🇷 Турция (CFLandNG)",
+      "settings": {
+        "vnext": [
+          {
+            "address": "190.93.244.146",
+            "port": 443,
+            "users": [
+              {
+                "id": "93afc986-c8ca-43c4-97dc-0499638f2d08",
+                "encryption": "none",
+                "flow": "",
+                "serviceName": ""
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "packetEncoding": "",
+        "tlsSettings": {
+          "serverName": "withered-base-c169.cedzah.workers.dev",
+          "allowInsecure": false,
+          "fingerprint": "",
+          "alpn": []
+        },
+        "realitySettings": {
+          "publicKey": "",
+          "shortId": "",
+          "serverName": "withered-base-c169.cedzah.workers.dev"
+        },
+        "kcpSettings": {
+          "seed": ""
+        },
+        "grpcSettings": {
+          "serviceName": ""
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "withered-base-c169.cedzah.workers.dev"
+          },
+          "path": "/stream/LML_PANEL/0499638f2d08"
+        }
+      }
+    }
+  ],
+  "policy": {
+    "levels": {
+      "1": {
+        "connIdle": 30
+      }
+    },
+    "system": {
+      "statsOutboundDownlink": true,
+      "statsOutboundUplink": true
+    }
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "inboundTag": [
+          "dns-in"
+        ],
+        "outboundTag": "dns-out",
+        "type": "field"
+      }
+    ]
+  },
+  "stats": {}
+}
